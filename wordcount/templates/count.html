@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>{% block title %}Django app{% endblock %}</title>
+</head>
+<body style="background-color:rgb(209, 213, 224)">
+    <div class="container mt-5">
+        
+        <a class="btn btn-primary" href="{% url 'home'%}" role="button">Link</a>
+        <h1>There are {{ count }} texts</h1>
+        <h3>Here is your text:</h3>
+        <p1>{{ fulltext }}</p1>
+        <br>
+        <br>
+        <h3>This is word count:</h3>
+        {% for word, total_count in sorted_count %}
+        <br>
+        {{word}} - {{total_count}}
+        {% endfor %}    
+
+    </div>
+</body>
+</html>
+
+
+<!-- <h1>There are {{ count }} texts</h1>
+<h2>Here is your text:</h2>
+<p1>{{ fulltext }}</p1>
+<h3>This is word count</h3>
+{% for word, total_count in sorted_count %}
+
+<br>
+<br>
+{{word}} - {{total_count}}
+{% endfor %} -->

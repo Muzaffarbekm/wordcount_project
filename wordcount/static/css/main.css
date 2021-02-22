@@ -1,0 +1,24 @@
+
+.cont h1 {
+    font-size: 40px !important;
+    margin: auto;
+    margin-bottom: 1%;
+    padding-left: 200px;
+    color: rgb(0, 44, 44);
+    
+}
+body {
+    padding-left: 250px;
+    
+    padding-top: 2rem;
+    background-color: rgb(209, 213, 224);
+}
+.btn.btn-primary {
+    margin-top: 10px;
+    outline: none;
+}
+.btn.btn-primary:hover {
+    background-color: rgb(38, 0, 126);
+    color: rgb(250, 250, 250);
+    border-radius: 15%;
+}
